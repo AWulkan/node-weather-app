@@ -20,6 +20,6 @@ Example input:
 Example output (success):  
 ```
 Gothenburg Central Station, Drottningtorget, 411 03 Göteborg, Sweden
-It's currently 33.45.
-It feels like 22.36.
+It's currently 0.58°C.
+It feels like -5.6°C.
 ```
