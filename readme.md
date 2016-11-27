@@ -1,8 +1,7 @@
 ### A simple Node.js weather app.  
 In progress.  
-I haven't added weather checking functionality yet. :)
-
-
+This app is inspired by Andrew Mead's course at Udemy called:  
+The Complete Node.js Developer Course 2.0  
 
 #### Set up the weather app:  
 After you've downloaded the repository you need to create an `apikeys.js` file in the `apikeys` folder. The content of the `apikeys.js` file should look like this:  
