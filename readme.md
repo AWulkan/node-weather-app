@@ -8,9 +8,11 @@ I haven't added weather checking functionality yet. :)
 Example input:  
 `node app -a "gothenburg central station"`  
 
-Example output:  
+Example output (success):  
 ```
-Address: Gothenburg Central Station, Drottningtorget, 411 03 Göteborg, Sweden
-Latitude: 57.708876
-Longitude: 11.973499
+{
+  "address": "Gothenburg Central Station, Drottningtorget, 411 03 Göteborg, Sweden",
+  "latitude": 57.708876,
+  "longitude": 11.973499
+}
 ```
