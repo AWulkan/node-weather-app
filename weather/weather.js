@@ -1,5 +1,5 @@
 const AXIOS = require('axios');
-const APIKEYS = require("../apikeys/apikeys");
+const APIKEYS = require("../apikeys");
 
 var getWeather = (lat, lng) => {
     let weatherUrl = `https://api.darksky.net/forecast/${APIKEYS.darkSkyKey}/${lat},${lng}?units=si`;
