@@ -1,7 +1,23 @@
 const REQUEST = require("request");
+const YARGS = require("yargs");
+
+const argv = YARGS
+    .options({
+        a: {
+            demand: true, // You MUST provide an address
+            alias: "address",
+            describe: "Address to fetch weather for",
+            string: true // Always parse as a string
+        }
+    })
+    .help()
+    .alias("help", "h")
+    .argv;
+
+let encodedAddress = encodeURIComponent(argv.address);
 
 REQUEST({
-    url: "https://maps.googleapis.com/maps/api/geocode/json?address=1301%20lombard%20street%20philadelphia",
+    url: `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}`,
     json: true
 }, (error, response, body) => {
     // The 'undefined' is where you could alternatively filter out properties
