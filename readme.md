@@ -23,6 +23,7 @@ Example input:
 Example output (success):  
 ```
 Gothenburg Central Station, Drottningtorget, 411 03 Göteborg, Sweden
+Current Weather: Partly Cloudy.
 It's currently 0.58°C.
 It feels like -5.6°C.
 ```

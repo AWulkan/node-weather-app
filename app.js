@@ -22,6 +22,8 @@ GEOCODE.geocodeAddress(argv.address).then((response) => {
 }).then((response) => {
     let temperature = response.temperature;
     let apparentTemperature = response.apparentTemperature;
+    let summary = response.summary;
+    if (summary) {console.log(`Current weather: ${summary}.\n`);};
     console.log(`It's currently ${temperature}°C.\nIt feels like ${apparentTemperature}°C.`);
 }).catch((error) => {
     console.log(error.message);

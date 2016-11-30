@@ -7,7 +7,8 @@ var getWeather = (lat, lng) => {
     return AXIOS.get(weatherUrl).then((response) => {
         return {
             temperature: response.data.currently.temperature,
-            apparentTemperature: response.data.currently.apparentTemperature
+            apparentTemperature: response.data.currently.apparentTemperature,
+            symmary: response.data.currently.summary
         };
     });
 };
